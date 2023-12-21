@@ -18,8 +18,8 @@ df['duration_min'] = df['duration_ms'] / (1000 * 60)
 
 # Snowflake account credentials and connection details
 user = "YASSIN"
-password = "Swedenystad+1"
-account = "HDSCWGU-RH60445"
+password = ""
+account = ""
 database = "SPOTIFY_BRIEF"
 schema = "SPOTIFY_BRIEF_SCHEMA"
 # Create a connection to Snowflake
