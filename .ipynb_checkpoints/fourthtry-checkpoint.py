@@ -13,14 +13,14 @@ df['track_album_release_date'] = df['track_album_release_date'].astype(str).str[
 
 df['duration_min'] = (df['duration_ms'] / (1000 * 60)).astype('int64')
 
-# Drop the original 'duration_ms' column
+# Drop the original 'duration_ms' column since most people dont count songs in ms
 
 df.drop('duration_ms', axis=1, inplace=True)
 
 # Snowflake account credentials and connection details
 user = "YASSIN"
-password = "Swedenystad+1"
-account = "HDSCWGU-RH60445"
+password = ""
+account = ""
 database = "SPOTIFY_BRIEF"
 schema = "SPOTIFY_BRIEF_SCHEMA"
 
