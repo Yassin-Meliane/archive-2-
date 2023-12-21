@@ -33,7 +33,7 @@ conn = snowflake.connector.connect(
     schema=schema
 )
 # Write the data from the DataFrame to Snowflake
-write_pandas(conn, df, "spotify_fact", auto_create_table=True)
+write_pandas(conn, df, "spotify_fact1", auto_create_table=True)
 # Close the connection
 conn.close()
 
